@@ -1,0 +1,207 @@
+List<string> registros = new List<string>();
+
+bool continuar = true;
+int registrosValidos = 0;
+int registrosRechazados = 0;
+double valorTotalInventario = 0;
+
+while (continuar)
+
+{
+
+ Console.WriteLine();
+
+   Console.WriteLine("===== MENU =====");
+  Console.WriteLine("1. Agregar registro");
+  Console.WriteLine("2. Listar registros");
+
+   Console.WriteLine("3. Salir");
+
+   Console.Write("Seleccione una opcion: ");
+
+
+
+   string opcion = Console.ReadLine() ?? "";
+
+
+
+   if (opcion == "1")
+
+   {
+       bool seguirAgregando = true;
+
+
+     while (seguirAgregando)
+      {
+
+         Console.WriteLine();
+
+         Console.WriteLine("=== Nuevo Producto ===");
+
+
+
+
+           string nombre = Console.ReadLine() ?? "";
+
+
+
+         Console.Write("Precio unitario: ");
+
+       string? textoPrecio = Console.ReadLine();
+
+          bool precioValido = double.TryParse(textoPrecio, out double precio);
+
+
+
+        string? textoCantidad = Console.ReadLine();
+
+       bool cantidadValida = int.TryParse(textoCantidad, out int cantidad);
+
+
+          if (string.IsNullOrWhiteSpace(nombre))
+       {
+
+             registrosRechazados++;
+
+         }
+
+          else if (!precioValido)
+
+          {
+
+             Console.WriteLine("Registro rechazado: precio inválido.");
+              registrosRechazados++;
+
+
+          else if (precio < 0)
+
+           {
+              Console.WriteLine("Registro rechazado: el precio no puede ser negativo.");
+
+               registrosRechazados++;
+
+           }
+
+          else if (!cantidadValida)
+
+           {
+
+              Console.WriteLine("Registro rechazado: cantidad inválida.");
+
+
+
+           else if (cantidad > 1000)
+
+           {
+
+              Console.WriteLine("Registro rechazado: la cantidad no puede superar 1000 unidades.");
+
+              registrosRechazados++;
+
+          }
+
+          else
+
+           {
+
+              double valorProducto = precio \* cantidad;
+
+
+
+              registros.Add(
+                 $"Nombre: {nombre} | Precio: {precio} | Cantidad: {cantidad} | Total: {valorProducto}"
+
+             );
+
+
+
+               valorTotalInventario += valorProducto;
+
+
+
+              registrosValidos++;
+
+
+
+             Console.WriteLine("Producto registrado correctamente.");
+
+         }
+
+
+
+         Console.Write("¿Desea agregar otro producto? (S/N): ");
+
+           string respuesta = (Console.ReadLine() ?? "").ToUpper();
+
+
+
+         if (respuesta != "S")
+
+         {
+
+               seguirAgregando = false;
+
+           }
+
+      }
+
+  }
+
+   else if (opcion == "2")
+
+   {
+
+      Console.WriteLine();
+
+      Console.WriteLine("=== LISTA DE REGISTROS ===");
+
+
+
+       if (registros.Count == 0)
+
+       {
+
+           Console.WriteLine("No hay registros.");
+
+       }
+
+       else
+
+       {
+
+           foreach (string registro in registros)
+
+           {
+
+               Console.WriteLine(registro);
+
+           }
+
+      }
+
+
+
+         Console.WriteLine();
+
+      Console.WriteLine($"Registros válidos   : {registrosValidos}");
+
+      Console.WriteLine($"Registros rechazados: {registrosRechazados}");
+      Console.WriteLine($"Valor total inventario: {valorTotalInventario}");
+
+   }
+  else if (opcion == "3")
+
+  {
+       continuar = false;
+
+   }
+
+  else
+
+   {
+
+       Console.WriteLine("Opción no válida.");
+
+  }
+
+}

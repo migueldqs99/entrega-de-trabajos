@@ -1,0 +1,14 @@
+C:\Users\Usuario\Downloads\trabajo09-09-2026\entregatrabajo\bin\Debug\net9.0\entregatrabajo.exe
+C:\Users\Usuario\Downloads\trabajo09-09-2026\entregatrabajo\bin\Debug\net9.0\entregatrabajo.deps.json
+C:\Users\Usuario\Downloads\trabajo09-09-2026\entregatrabajo\bin\Debug\net9.0\entregatrabajo.runtimeconfig.json
+C:\Users\Usuario\Downloads\trabajo09-09-2026\entregatrabajo\bin\Debug\net9.0\entregatrabajo.dll
+C:\Users\Usuario\Downloads\trabajo09-09-2026\entregatrabajo\bin\Debug\net9.0\entregatrabajo.pdb
+C:\Users\Usuario\Downloads\trabajo09-09-2026\entregatrabajo\obj\Debug\net9.0\entregatrabajo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Downloads\trabajo09-09-2026\entregatrabajo\obj\Debug\net9.0\entregatrabajo.AssemblyInfoInputs.cache
+C:\Users\Usuario\Downloads\trabajo09-09-2026\entregatrabajo\obj\Debug\net9.0\entregatrabajo.AssemblyInfo.cs
+C:\Users\Usuario\Downloads\trabajo09-09-2026\entregatrabajo\obj\Debug\net9.0\entregatrabajo.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Downloads\trabajo09-09-2026\entregatrabajo\obj\Debug\net9.0\entregatrabajo.dll
+C:\Users\Usuario\Downloads\trabajo09-09-2026\entregatrabajo\obj\Debug\net9.0\refint\entregatrabajo.dll
+C:\Users\Usuario\Downloads\trabajo09-09-2026\entregatrabajo\obj\Debug\net9.0\entregatrabajo.pdb
+C:\Users\Usuario\Downloads\trabajo09-09-2026\entregatrabajo\obj\Debug\net9.0\entregatrabajo.genruntimeconfig.cache
+C:\Users\Usuario\Downloads\trabajo09-09-2026\entregatrabajo\obj\Debug\net9.0\ref\entregatrabajo.dll
